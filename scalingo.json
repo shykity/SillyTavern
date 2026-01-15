@@ -1,0 +1,14 @@
+{
+  "name": "SillyTavern",
+  "description": "SillyTavern is a user interface for interacting with text generation AIs",
+  "repository": "https://github.com/SillyTavern/SillyTavern",
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  },
+  "scripts": {
+    "postdeploy": "node post-install.js"
+  }
+}
