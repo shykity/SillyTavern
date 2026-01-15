@@ -304,7 +304,7 @@ export class CommandLineParser {
             certPath: cliArguments.certPath ?? getConfigValue('ssl.certPath', defaultConfig.certPath),
             keyPath: cliArguments.keyPath ?? getConfigValue('ssl.keyPath', defaultConfig.keyPath),
             keyPassphrase: cliArguments.keyPassphrase ?? getConfigValue('ssl.keyPassphrase', defaultConfig.keyPassphrase),
-            whitelistMode: cliArguments.whitelist ?? (isCloudDeployment ? false : null) ?? getConfigValue('whitelistMode', defaultConfig.whitelistMode, 'boolean'),
+            whitelistMode: cliArguments.whitelist ?? getConfigValue('whitelistMode', defaultConfig.whitelistMode, 'boolean'),
             basicAuthMode: cliArguments.basicAuthMode ?? getConfigValue('basicAuthMode', defaultConfig.basicAuthMode, 'boolean'),
             requestProxyEnabled: cliArguments.requestProxyEnabled ?? getConfigValue('requestProxy.enabled', defaultConfig.requestProxyEnabled, 'boolean'),
             requestProxyUrl: cliArguments.requestProxyUrl ?? getConfigValue('requestProxy.url', defaultConfig.requestProxyUrl),
